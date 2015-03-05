@@ -11,9 +11,9 @@ it in production.
 contents
 --------
 
- * `/sabracta` - the django core module.
- * `/aptroomat` - the geodjango app module.
- * `/aptroomat/data` - custom geodatasets.
+ * `sabracta/` - the django core module.
+ * `aptroomat/` - the geodjango app module.
+ * `aptroomat/data/` - custom geodatasets.
 
 
 dependencies
@@ -41,7 +41,17 @@ setup
 adjust `sabracta/settings.py` for your needs. using a postgis backend is
 strongly recommended, if not mandatory for this implementation.
 
-write database model:
+make sure all postgis extensions and full python language support are installed
+in the used postgresql database. refer to the postgis documentation, used in
+this project:
+
+    CREATE EXTENSION postgis;
+    CREATE EXTENSION postgis_topology;
+    CREATE EXTENSION postgis_tiger_geocoder;
+    CREATE EXTENSION fuzzystrmatch;
+    CREATE EXTENSION plpythonu;
+
+write aptroomat database model:
 
     $ python manage.py makemigrations
     $ python manage.py sqlmigrate aptroomat 0001
