@@ -12,6 +12,8 @@ contents
 --------
 
  * `/sabracta` - the django core module.
+ * `/aptroomat` - the geodjango app module.
+ * `/aptroomat/data` - custom geodatasets.
 
 
 dependencies
