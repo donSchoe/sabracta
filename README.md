@@ -1,10 +1,17 @@
 # sabracta
-sabracta postgis and geodjango proof-of-concept project.
+sabracta postgis and geodjango proof-of-concept project. this uses python
+whereever possible, including database queries (plpythonu).
 
-note: for documentation purposes only. not to be used in production.
+**note**: for documentation purposes only. not to be used in production.
 
-note: this repository includes passwords and secrets by intention. don't use it
-in production.
+**note**: this repository includes passwords and secrets by intention. don't use
+it in production.
+
+
+contents
+--------
+
+ * `/sabracta` - the django core module.
 
 
 dependencies
@@ -58,9 +65,9 @@ navigate to localhost admin panel:
 resources
 ---------
 
- * [wiki.archlinux.org/postgresql](https://wiki.archlinux.org/index.php/postgresql)
- * [wiki.archlinux.org/phppgadmin](https://wiki.archlinux.org/index.php/phppgadmin)
- * [wiki.archlinux.org/postgis](https://wiki.archlinux.org/index.php/postgis)
+ * [wiki.archlinux.org/postgresql](https://wiki.archlinux.org/index.php/PostgreSQL)
+ * [wiki.archlinux.org/phppgadmin](https://wiki.archlinux.org/index.php/PhpPgAdmin)
+ * [wiki.archlinux.org/postgis](https://wiki.archlinux.org/index.php/PostGIS)
  * [docs.djangoproject.com/intro/install/](https://docs.djangoproject.com/en/dev/intro/install/)
  * [docs.djangoproject.com/ref/contrib/gis/tutorial/](https://docs.djangoproject.com/en/dev/ref/contrib/gis/tutorial/)
  * [thematicmapping.org/world_borders](http://thematicmapping.org/downloads/world_borders.php)
@@ -77,3 +84,8 @@ this repository includes geographic datasets from
 [thematicmapping.org](http://thematicmapping.org/downloads/world_borders.php)
 which is licensed under
 [creative commons attribution-share alike license 3.0](http://creativecommons.org/licenses/by-sa/3.0/).
+
+if you ever author geographic datasets, don't use creative commons as they don't
+cover data, datasets and databases.
+[read more why](http://opendatacommons.org/faq/licenses/#Why_Not_Use_a_Creative_Commons_or_FreeOpen_Source_Software_License_for_Databases).
+use an [open data commons license](http://opendatacommons.org/licenses/) type.
