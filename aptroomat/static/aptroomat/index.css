@@ -1,0 +1,21 @@
+* { margin: 0; padding: 0; border: 0; list-style: none; }
+
+body { background: #487858 url('background.png') 0 0 repeat-x; color: #fff; font: 90%/180% "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; text-align: center; }
+
+a { color: #9c4; font-weight: bold; padding: 10px; text-decoration: none; }
+a:hover { background: #9c4; color: #fff; }
+
+p { padding: 0 0 20px 10px; text-align: justify; }
+h1, h2 { font: 1.4em Georgia, "Times New Roman", Times, serif; }
+
+#header { background: transparent url('globe.png') 0 60px repeat-x; height: 640px; margin: 0 auto; width: 474px; }
+
+#header h1 { color: #000; padding-top: 125px; }
+#header h1 a { background: transparent url('geodjango.png') center top no-repeat; display: block; height: 50px; text-indent: -999em; }
+#header h2 { color: #8b5; font-size: 0.9em; }
+
+
+#links { background: #243; border-top: 5px solid #9c4; display: block; left: 0; position: absolute; text-align: center; top: 0; width: 100%; }
+#links li { display: inline; font-size: 0.9em; }
+#links li a { padding: 10px; }
+#links li span.small { font-size: 0.8em; }
