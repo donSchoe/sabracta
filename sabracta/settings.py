@@ -36,8 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.gis',           # geodjango
-    'aptroomat',                    # my custom project
+    'django.contrib.gis',           # load geodjango contrib
+    'aptroomat',                    # load our custom geodjango project
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,10 +60,11 @@ WSGI_APPLICATION = 'sabracta.wsgi.application'
 
 DATABASES = {
     'default': {
+                                    # use postgis from goedjango
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'legenite',
         'USER': 'eurekin',
-        'PASSWORD': 'asdfghjkl',
+        'PASSWORD': 'asdfghjkl',    # don't do this in production
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
