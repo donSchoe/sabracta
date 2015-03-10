@@ -33,7 +33,6 @@ the following setup was used for this project:
  * gdal        1.11.2
  * geos        3.4.2
  * proj        4.8.0
- * floppyforms 1.3.0
 
 
 setup

@@ -1,5 +1,4 @@
 from django.shortcuts import render
-import floppyforms as forms
 from aptroomat.forms import WorldBorderForm
 
 def index(request):
