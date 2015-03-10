@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; border: 0; list-style: none; }
 
-body { background: #487858 url('background.png') 0 0 repeat-x; color: #fff; font: 90%/180% "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; text-align: center; }
+body { background: #487858 url('background.png') 0 0 repeat-x; color: #fff; font: 90%/180% "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; text-align: center; overflow: hidden; }
 
 a { color: #9c4; font-weight: bold; padding: 10px; text-decoration: none; }
 a:hover { background: #9c4; color: #fff; }
@@ -14,6 +14,12 @@ h1, h2 { font: 1.4em Georgia, "Times New Roman", Times, serif; }
 #header h1 a { background: transparent url('geodjango.png') center top no-repeat; display: block; height: 50px; text-indent: -999em; }
 #header h2 { color: #8b5; font-size: 0.9em; }
 
+#widget { background: transparent url('bubble.png') 0 100px repeat-x; height: 170px; margin: 0 auto; width: 232px; }
+#widget h2 { color: #8b5; padding-top: 125px; font-size: 0.9em; }
+
+#map { height: 600px; margin: 0 auto; width: 1024px; }
+#map p { display: none; }
+#map label { display: none; }
 
 #links { background: #243; border-top: 5px solid #9c4; display: block; left: 0; position: absolute; text-align: center; top: 0; width: 100%; }
 #links li { display: inline; font-size: 0.9em; }

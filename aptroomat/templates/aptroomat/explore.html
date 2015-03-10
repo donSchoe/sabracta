@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sabracta Aptroomat</title>
+    <meta name="description" content="Sabracta Aptroomat Eurekin Legenite">
+    <link rel="stylesheet" href="/static/aptroomat/index.css" type="text/css" media="screen">
+    <link rel="shortcut icon" type="image/ico" href="/static/aptroomat/favicon.ico">
+    {{ form.media }}
+  </head>
+  <body>
+    <ul id="links">
+      <li><a title="legenite">legenite</a></li>
+      <li><a title="eurekin">eurekin</a></li>
+      <li><a title="sabracta">sabracta</a></li>
+      <li><a title="aptroomat">aptroomat</a></li>
+    </ul>
+    <div id="widget">
+      <h2>
+        <a href="/aptroomat" title="stop exploring">stop exploring</a>
+      </h2>
+    </div>
+    <div id="map">
+      <form method="post" action="/aptroomat/">
+        {% csrf_token %}
+        {{ form.as_p }}
+      </form>
+    </div>
+  </body>
+</html>

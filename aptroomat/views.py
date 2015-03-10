@@ -1,4 +1,6 @@
 from django.shortcuts import render
+import floppyforms as forms
+from aptroomat.forms import WorldBorderForm
 
 def index(request):
     enter = "start exploring"
@@ -6,6 +8,6 @@ def index(request):
     return render(request, 'aptroomat/index.html', context)
 
 def explore(request):
-    enter = "can\'t stop exploring"
-    context = { 'enter': enter }
-    return render(request, 'aptroomat/index.html', context)
+    form = WorldBorderForm()
+    context = { 'form': form }
+    return render(request, 'aptroomat/explore.html', context)

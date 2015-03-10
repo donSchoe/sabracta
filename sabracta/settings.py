@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',           # load geodjango contrib
+    'floppyforms',                  # load floppyforms map widgets
     'aptroomat',                    # load our custom geodjango project
 )
 
