@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from aptroomat.models import WorldBorder
 from aptroomat.forms import WorldBorderForm
 
 def index(request):
@@ -8,5 +9,6 @@ def index(request):
 
 def explore(request):
     form = WorldBorderForm()
-    context = { 'form': form }
+    layers = WorldBorder.objects.all()
+    context = { 'form': form, 'layers': layers }
     return render(request, 'aptroomat/explore.html', context)

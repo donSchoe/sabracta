@@ -17,7 +17,7 @@ h1, h2 { font: 1.4em Georgia, "Times New Roman", Times, serif; }
 #widget { background: transparent url('bubble.png') 0 100px repeat-x; height: 170px; margin: 0 auto; width: 232px; }
 #widget h2 { color: #8b5; padding-top: 125px; font-size: 0.9em; }
 
-#map { height: 600px; margin: 0 auto; width: 1024px; }
+#map { height: 600px; margin: 0 auto; width: 1920px; }
 #map p { display: none; }
 #map label { display: none; }
 

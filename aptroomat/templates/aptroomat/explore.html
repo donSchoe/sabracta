@@ -20,10 +20,13 @@
         <a href="/aptroomat" title="stop exploring">stop exploring</a>
       </h2>
     </div>
+    {% for lyr in layers %} <!-- iterates through all available postgis layers -->
+      <p>{{ lyr.name }} : {{ lyr.mpoly }}</p> <!-- displays name and geometry of each layer -->
+    {% endfor %}
     <div id="map">
       <form method="post" action="/aptroomat/">
         {% csrf_token %}
-        {{ form.as_p }}
+        {{ form.as_p }} <!-- renders the geodjango osm widget -->
       </form>
     </div>
   </body>

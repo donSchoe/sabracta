@@ -5,7 +5,7 @@ class WorldBorderForm(forms.Form):
     world = forms.MultiPolygonField(
         widget = forms.OSMWidget(
             attrs = {
-                'map_width': 1024,
+                'map_width': 1920,
                 'map_height': 600,
             }
         )
