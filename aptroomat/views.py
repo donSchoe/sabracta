@@ -9,6 +9,6 @@ def index(request):
 
 def explore(request):
     form = WorldBorderForm()
-    layers = WorldBorder.objects.all()
-    context = { 'form': form, 'layers': layers }
+    #layers = WorldBorder.objects.all()
+    context = { 'form': form } #, 'layers': layers }
     return render(request, 'aptroomat/explore.html', context)
