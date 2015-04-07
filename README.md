@@ -73,6 +73,12 @@ navigate to localhost admin panel:
 
  * [[::1]:8000/admin](http://[::1]:8000/admin/)
 
+explore the geodjango app:
+
+ * [[::1]:8000/aptroomat](http://[::1]:8000/aptroomat/)
+ * [[::1]:8000/aptroomat/explore](http://[::1]:8000/aptroomat/explore/)
+ * [[::1]:8000/aptroomat/api](http://[::1]:8000/aptroomat/api/)
+
 
 resources
 ---------
