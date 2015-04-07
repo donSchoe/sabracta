@@ -1,0 +1,2 @@
+{"geometries":[ {% for lyr in layers %} <!-- iterates through all available postgis layers -->
+{{ lyr.mpoly.json }}, {% endfor %} ]} <!-- displays geojson output of every geometry per layer -->
