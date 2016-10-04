@@ -1,4 +1,6 @@
 # sabracta
+
+[![Join the chat at https://gitter.im/5chdn/sabracta](https://badges.gitter.im/5chdn/sabracta.svg)](https://gitter.im/5chdn/sabracta?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 sabracta postgis and geodjango proof-of-concept project. this uses python
 whereever possible, including database queries (plpythonu).
 
